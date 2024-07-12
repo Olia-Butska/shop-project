@@ -18,5 +18,13 @@ window.addEventListener('click', function(event){
     price: card.querySelector('.price__currency').innerText,
     counter: card.querySelector('[data-counter]').innerText,
     };
+    //перевіряти чи є вже такий товар у кошику
+ const itemInCart = cartWrapper.querySelector([data-id="${productInfo.id}"]);
+ console.log(itemInCart);
+    
+ //якщо товар є в кошику
+ if (itemInCart){
+  const counterElement = itemInCart.querySelector('[data-counter]');
+  counterElement.innerText = parseInt(counterElement.innerText) + parseInt(productInfo.counter);
 }
 });
