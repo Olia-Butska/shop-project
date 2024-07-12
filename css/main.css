@@ -22,3 +22,53 @@ body, html {
  font-family: 'Merriweather', serif;
  height: 70px;
 }
+.details-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+   
+   .items {
+    font-family: 'Merriweather', serif;
+    background: #f2ede7;
+    border-radius: 8px;
+    width: 120px;
+    display: flex;
+    font-size: 18px;
+    height: 30px;
+    overflow: hidden;
+   }
+   .items__control {
+    width: 40px;
+    cursor: pointer;
+    transition: 0.2s ease-in;
+    text-align: center;
+   }
+   
+   .items__control:hover {
+       background: #eb5a1e;
+       color: #FFF;
+   }
+   
+   .items__current {
+    width: 40px;
+   }
+   /* items--small */
+.items.items--small {
+    width: 90px;
+    font-size: 16px;
+    height: 26px;
+    text-align: center;
+   }
+   
+   .items.items--small .items__control {
+    width: 30px;
+   }
+   
+   .items.items--small .items__current {
+    width: 30px;
+   }
