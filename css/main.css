@@ -16,3 +16,9 @@ body, html {
     margin-left: auto;
     margin-right: auto;
    }
+   .item-title {
+    font-size: 1.5rem;
+    font-weight: 500;
+ font-family: 'Merriweather', serif;
+ height: 70px;
+}
