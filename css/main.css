@@ -72,3 +72,18 @@ body, html {
    .items.items--small .items__current {
     width: 30px;
    }
+   .price {
+    text-align: left;
+   }
+   
+   .price__weight {
+    color: #6c757d!important;
+    font-size: 80%;
+    line-height: 1;
+   }
+   
+   .price__currency {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1;
+   }
