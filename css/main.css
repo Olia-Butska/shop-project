@@ -2,3 +2,11 @@ body, html {
     background-color: #F8F9F9;
     height: 100%;
    }
+   h3, h4 {
+    font-family: 'Merriweather', serif;
+   
+   }
+   .header {
+    padding-top: 50px;
+    padding-bottom: 50px;
+   }
