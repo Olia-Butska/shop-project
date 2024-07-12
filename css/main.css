@@ -153,3 +153,22 @@ body, html {
  font-size: 18px;
  font-weight: 500;
 }
+.delivery-cost {
+
+}
+
+.free {
+ color: #0EA107;
+}
+
+.total-price {
+ color: #EB5A1E;
+}
+
+.rouble {
+ color: #EB5A1E;
+}
+
+.none {
+ display: none;
+}
