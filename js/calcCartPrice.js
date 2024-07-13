@@ -2,6 +2,8 @@ function calcCartPriceAndDelivery() {
    const cartWrapper = document.querySelector('.cart-wrapper');
    const priceElements = cartWrapper.querySelectorAll('.price__currency');
    const totalPriceEl = document.querySelector('.total-price');
+   const deliveryCost = document.querySelector('.delivery-cost');
+
    let priceTotal = 0;
 
     priceElements.forEach(function (item){
@@ -11,4 +13,12 @@ function calcCartPriceAndDelivery() {
    
 
    totalPriceEl.innerText = priceTotal;
+
+   if (priceTotal >= 600){
+       deliveryCost.classList.add('free');
+       deliveryCost.innerText = 'безкоштовна';
+   }else{
+      deliveryCost.classList.remove('free');
+      deliveryCost.innerText = '60 ₴'
+   }
 }
