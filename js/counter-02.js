@@ -31,6 +31,8 @@ window.addEventListener('click', function(event){
             console.log('IN CART!!!!');
     
             event.target.closest('.cart-item').remove();
+
+            toggleCartStatus();
         }
         
         
