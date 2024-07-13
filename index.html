@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" >
-    <title>Магазин ролів</title>
-    <link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+	<title>Магазин ролів</title>
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i,700&amp;subset=cyrillic-ext" rel="stylesheet">
 
-    
 </head>
+
 <body>
 
 	<header class="header">
 		<div class="container text-center">
-			<img src="img/logo/logo.svg" width="92" alt="Суші та піцца">
+			<img src="img/logo/logo.svg" width="92" alt="Суші та піца">
 			<div class="display-4">Доставка ролів</div>
 			<p class="lead">Швидко та смачно</p>
 		</div>
@@ -22,9 +23,11 @@
 
 	<div class="container mb-5">
 		<div class="row">
+
 			<!--товари -->
 			<div class="col-md-8">
 				<div class="row">
+
 					<!-- Рол -->
 					<div class="col-md-6">
 						<div class="card mb-4" data-id="01">
@@ -86,32 +89,32 @@
 					<!-- // Рол -->
 
 					<!-- Рол -->
-						<div class="col-md-6">
-							<div class="card mb-4" data-id="03">
-								<img class="product-img" src="img/roll/zapech-california.jpg" alt="">
-								<div class="card-body text-center">
-									<h4 class="item-title">Запечений рол «Каліфорнія»</h4>
-									<p><small data-items-in-box class="text-muted">6 шт.</small></p>
-	
-									<div class="details-wrapper">
-										<div class="items counter-wrapper">
-											<div class="items__control" data-action="minus">-</div>
-											<div class="items__current" data-counter>1</div>
-											<div class="items__control" data-action="plus">+</div>
-										</div>
-	
-										<div class="price">
-											<div class="price__weight">182г.</div>
-											<div class="price__currency">240 ₴</div>
-										</div>
-	
+					<div class="col-md-6">
+						<div class="card mb-4" data-id="03">
+							<img class="product-img" src="img/roll/zapech-california.jpg" alt="">
+							<div class="card-body text-center">
+								<h4 class="item-title">Запечений рол «Каліфорнія»</h4>
+								<p><small data-items-in-box class="text-muted">6 шт.</small></p>
+
+								<div class="details-wrapper">
+									<div class="items counter-wrapper">
+										<div class="items__control" data-action="minus">-</div>
+										<div class="items__current" data-counter>1</div>
+										<div class="items__control" data-action="plus">+</div>
 									</div>
-	
-									<button data-cart type="button" class="btn btn-block btn-outline-warning">+ до кошика</button>
-	
+
+									<div class="price">
+										<div class="price__weight">182г.</div>
+										<div class="price__currency">240 ₴</div>
+									</div>
+
 								</div>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ до кошика</button>
+
 							</div>
 						</div>
+					</div>
 					<!-- // Рол -->
 
 					<!-- Рол -->
@@ -136,9 +139,7 @@
 
 								</div>
 
-								<button data-cart type="button" class="btn btn-block btn-outline-warning">
-									+ до кошика
-								</button>
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ до кошика</button>
 
 							</div>
 						</div>
@@ -196,7 +197,7 @@
 						<!-- вартість замовлення -->
 						<div class="cart-total">
 							<p><span class="h5">Доставка:</span> <span class="delivery-cost free">безкоштово</span> </p>
-							<p><span class="h5">Загальна вартість:</span> <span class="total-price">330</span> <span class="rouble">₴</span></p>
+							<p><span class="h5">Загальна вартість:</span> <span class="total-price">330</span> <span class="price">₴</span></p>
 						</div>
 						<!-- // вартість замовлення -->
 
@@ -219,11 +220,14 @@
 
 
 			</div>
-				
 		</div>
 	</div>
-    <!-- Підключення скриптів -->
-	 <script src="./js/counter-02.js"></script>
-	 <script src="./js/cart-02.js"></script>
+
+	<!-- підключаємо скрипти -->
+    
+	<script src="./js/toggleCartStatus.js"></script>
+	<script src="./js/counter-02.js"></script>
+	<script src="./js/cart-02.js"></script>
 </body>
+
 </html>
