@@ -34,13 +34,13 @@ window.addEventListener('click', function(event){
 
             toggleCartStatus();
 
-            calcCartPrice();
+            calcCartPriceAndDelivery();
         }   
         
     }
     
     //перевірка на + чи - всередині кошика
     if (event.target.hasAttribute('data-action') && event.target.closest('.cart-wrapper')){
-        calcCartPrice();
+        calcCartPriceAndDelivery();
     }
     });
