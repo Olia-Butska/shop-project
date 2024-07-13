@@ -67,4 +67,5 @@ window.addEventListener('click', function(event){
 	//відображення статусу кошика порожній/повний
 	toggleCartStatus();
    }
+   
 });
