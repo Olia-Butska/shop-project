@@ -1,3 +1,4 @@
+
 // find elements on the page
 const btnMinus = document.querySelector('[data-action="minus"]');
 
