@@ -33,7 +33,9 @@
 						<div class="card mb-4" data-id="01">
 							<img class="product-img" src="img/roll/california-hit.jpg" alt="">
 							<div class="card-body text-center">
-								<h4 class="item-title">Каліфорнiя хіт рол</h4>
+
+								<h4 class="item-title">Каліфорнія хіт рол</h4>
+
 								<p><small data-items-in-box class="text-muted">6 шт.</small></p>
 
 
@@ -139,7 +141,11 @@
 
 								</div>
 
-								<button data-cart type="button" class="btn btn-block btn-outline-warning">+ до кошика</button>
+
+								<button data-cart type="button" class="btn btn-block btn-outline-warning">
+									+ до кошика
+								</button>
+
 
 							</div>
 						</div>
@@ -196,15 +202,25 @@
 
 						<!-- вартість замовлення -->
 						<div class="cart-total">
-							<p><span class="h5">Доставка:</span> <span class="delivery-cost free">безкоштово</span> </p>
-							<p><span class="h5">Загальна вартість:</span> <span class="total-price">330</span> <span class="price">₴</span></p>
+
+							<p data-cart-delivery class="none">
+								<span class="h5">Доставка:</span> 
+								<span class="delivery-cost">60 ₴</span>
+							 </p>
+							<p><span class="h5">Загальна вартість:</span> 
+								<span class="total-price">0</span> 
+								<span class="price">₴</span>
+							</p>
+
 						</div>
 						<!-- // вартість замовлення -->
 
 					</div>
 
 					<!-- Оформити замовлення-->
-					<div id="order-form" class="card-body border-top">
+
+					<div id="order-form" class="card-body border-top none">
+
 						<h5 class="card-title">Оформити замовлення</h4>
 						<form>
 							<div class="form-group">
@@ -225,6 +241,9 @@
 
 	<!-- підключаємо скрипти -->
     
+
+	<script src="./js/calcCartPrice.js"></script>
+
 	<script src="./js/toggleCartStatus.js"></script>
 	<script src="./js/counter-02.js"></script>
 	<script src="./js/cart-02.js"></script>
