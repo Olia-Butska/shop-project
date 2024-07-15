@@ -1,3 +1,6 @@
+
+//div всередині кошика, в який додаємо товари
+
 const cartWrapper = document.querySelector('.cart-wrapper');
 
 //відстежуємо клік на сторінці
@@ -6,6 +9,7 @@ window.addEventListener('click', function(event){
    if (event.target.hasAttribute('data-cart')){
    //знаходимо картку з товаром, всередині якої був клік
    const card = event.target.closest('.card');
+
 
    const productInfo = {
     id: card.dataset.id,
@@ -16,6 +20,7 @@ window.addEventListener('click', function(event){
     price: card.querySelector('.price__currency').innerText,
     counter: card.querySelector('[data-counter]').innerText,
     };
+
     
 	//перевіряти чи є вже такий товар у кошику
 	const itemInCart = cartWrapper.querySelector(`[data-id="${productInfo.id}"]`);
@@ -72,3 +77,4 @@ window.addEventListener('click', function(event){
    }
 
 });
+
